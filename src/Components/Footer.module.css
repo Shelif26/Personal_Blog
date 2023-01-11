@@ -1,0 +1,9 @@
+.footer{
+   background-color: violet;
+   height: 10rem;
+   width: 100%;
+   display: flex;
+   flex: 1;
+   justify-content:center;
+   padding: 50px;
+}

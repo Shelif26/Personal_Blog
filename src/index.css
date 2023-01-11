@@ -1,0 +1,14 @@
+* {
+  box-sizing: border-box;
+  overflow-x: hidden;
+  text-decoration: none;
+}
+
+
+html {
+  font-family: 'Times New Roman', Times, serif;
+}
+
+body {
+  margin: 0;
+}

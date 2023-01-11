@@ -1,0 +1,22 @@
+.techContainer{
+    margin-left: 10rem;
+    
+}
+
+.techHeading{
+    color: orange;
+    font-size: 40px;
+}
+
+.techContainerChild {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+  
+}
+
+img{
+    width: 6%;
+    height: 6%;
+    margin: 2%;
+}

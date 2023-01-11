@@ -1,0 +1,29 @@
+.AchievementsContainer{
+    margin-left: 10rem;
+}
+
+.heading{
+    color: orange;
+    font-size: 40px;
+}
+
+.AchievementsContainerchild{
+    padding-left: 5rem;
+}
+
+.nss {
+    text-decoration: none;
+    color: rgb(241, 68, 241);
+    font-size: xx-large;
+}
+
+.AwardDescription {
+    color: rgb(243, 145, 243);
+    font-size: x-large;
+}
+
+.imgSlider{
+    width: 100%;
+    display: flex;
+    margin-left: 30rem;
+}
