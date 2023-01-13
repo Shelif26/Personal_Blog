@@ -23,7 +23,7 @@ const Header = () => {
 
         <img
           className={classes.imagepic}
-          src="https://icon-library.com/images/icon-of-a-person/icon-of-a-person-7.jpg "
+          src="https://img.freepik.com/premium-vector/user-icon_126283-435.jpg?w=2000"
         />
       </div>
 

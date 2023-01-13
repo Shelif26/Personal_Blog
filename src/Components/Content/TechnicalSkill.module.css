@@ -19,8 +19,14 @@
     justify-content: space-between;
     padding: 2%;
     font-size: 100%;
+   
 }
-
+.gitsource{
+  color: rgb(116, 33, 194);
+}
+.havealook{
+  color: rgb(116, 33, 194);
+}
 
 
 .Project{

@@ -44,7 +44,7 @@ const TechnicalSkill = () => {
           <h4 className={classes.domain}>
             Programming Language : JavaScript <i class="fa-brands fa-js"></i>
           </h4>
-          <p>Frontend : React.js</p>
+          <p>Frontend Framework : React.js</p>
           <p>Backend Framework : Node.js</p>
           <div className={classes.ProjectChild}>
             <h4>Project : The Food Ordering App</h4>
@@ -59,14 +59,14 @@ const TechnicalSkill = () => {
             <div className={classes.demo}>
               <a
                 className={classes.gitsource}
-                href="https://github.com/Shelif26/React_Family_App.git"
+                href="https://github.com/Shelif26/React_Food_App.git"
               >
                 <i class="fa-brands fa-github"></i>
                 Source Code
               </a>
               <a
                 className={classes.havealook}
-                href="https://react-family-app.vercel.app/"
+                href="https://react-food-app-el1a.vercel.app/"
               >
                 <i class="fa-solid fa-rocket"></i>
                 Have a look

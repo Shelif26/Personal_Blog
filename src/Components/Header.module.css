@@ -39,6 +39,7 @@ animation: header 1.5s ease-out forwards;
 }
 
 .imagepic{
+  border-radius: 50%;
   width: 20%;
   height: 80%;
   margin-right: 5%;
