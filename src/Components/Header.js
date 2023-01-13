@@ -1,6 +1,5 @@
 import classes from "./Header.module.css";
 import Description from "./UI/Description";
-import Contact from "./UI/Contact";
 import TechHead from "./Content/TechHead";
 import TechnicalSkill from "./Content/TechnicalSkill";
 import Education from "./Content/Education";
@@ -18,23 +17,19 @@ const Header = () => {
       <div className={classes.Headcontainer}>
         <div className={classes.child1}>
           <h1>Hello I'm Shelif</h1>
-          <h4>Developer</h4>
+          <h4>A Developer</h4>
+          <Description />
         </div>
+
+        <img
+          className={classes.imagepic}
+          src="https://icon-library.com/images/icon-of-a-person/icon-of-a-person-7.jpg "
+        />
       </div>
 
-      <div className={classes.Contact}>
-        <Description />
-
-        <div className={classes.image}>
-          <img
-            className={classes.imagepic}
-            src="https://icon-library.com/images/icon-of-a-person/icon-of-a-person-7.jpg "
-          />
-        </div>
-      </div>
-      <TechHead />
       <TechnicalSkill />
-      <Education />
+      <TechHead />
+      {/* <Education /> */}
     </>
   );
 };

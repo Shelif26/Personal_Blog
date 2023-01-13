@@ -9,6 +9,7 @@ const Contact = () => {
       <a href="https://www.linkedin.com/in/m-a-shelif-09446b167/">
         <i class="fa-brands fa-linkedin"></i>
       </a>
+      <a href="https://github.com/Shelif26"><i class="fa-brands fa-github"></i></a>
       <a href="https://instagram.com/__shelif__?igshid=YmMyMTA2M2Y=">
         <i class="fa-brands fa-square-instagram"></i>
       </a>

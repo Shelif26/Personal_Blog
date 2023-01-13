@@ -1,6 +1,6 @@
 import classes from "./Education.module.css";
-import { College } from "./ImagesCombo/ImageSlider";
-import { Awards } from "./ImagesCombo/ImageSlider";
+import { College } from "./ImageSlider";
+import { Awards } from "./ImageSlider";
 
 const Education = () => {
   return (

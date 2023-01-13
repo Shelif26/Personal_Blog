@@ -1,18 +1,23 @@
 .techContainer{
-    margin-left: 10rem;
+    padding-left: 7.5%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: violet;
     
 }
 
 .techHeading{
-    color: orange;
+    color: white;
     font-size: 40px;
 }
 
 .techContainerChild {
+    justify-content: center;
     display: flex;
     flex-direction: row;
     width: 100%;
-  
+    
 }
 
 img{
@@ -20,3 +25,13 @@ img{
     height: 6%;
     margin: 2%;
 }
+
+  @media(
+    max-width: 600px
+  ){
+    techContainerChild{
+      width:100%;}
+        img{
+      width:100%;}
+    }
+     

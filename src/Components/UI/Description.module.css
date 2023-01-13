@@ -1,9 +1,8 @@
 .description{
-    font-size: 25px;
-    width: 55rem;
-    padding: 30px;
-    margin-left: 8rem;
-    color:  rgb(241, 60, 241);
-  
+    width: 100%;
+    display: flex;
+    justify-content:flex-start ;
+    color: rgb(217, 161, 161);
+    font-size: x-large;
 }
 
