@@ -1,8 +1,27 @@
+.desdiv{
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
 .description{
     width: 100%;
     display: flex;
     justify-content:flex-start ;
-    color: rgb(217, 161, 161);
+    color: rgba(255, 255, 255, 0.797);
     font-size: x-large;
 }
 
+@media(
+    max-width: 600px
+){
+    .desdiv{
+        display: flex;
+        margin-top: 3%;
+        width: 90%;
+    }
+    .description{
+        color: white;
+        font-size:20px; 
+        margin: 1%;
+    }
+}

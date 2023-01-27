@@ -74,11 +74,41 @@ const TechnicalSkill = () => {
             </div>
           </div>
         </div>
-
-        {/* <h4 className={classes.ProjectFooter}>
-          <i class="fa-solid fa-hand-point-right"></i> These are all the project
-          done by me <i class="fa-solid fa-hand-point-left"></i>
-        </h4> */}
+        {/* ------------------------------------------ */}
+       
+        <div className={classes.Project}>
+          <h4 className={classes.domain}>
+            Programming Language : JavaScript <i class="fa-brands fa-js"></i>
+          </h4>
+          <p>Frontend Framework : React.js</p>
+          <p>Backend Framework : none</p>
+          <div className={classes.ProjectChild}>
+            <h4>Project : React Forms</h4>
+            <img
+              className={classes.projectimg}
+              src={require("./ImagesCombo/react-forms.gif")}
+            />
+            <p className={classes.ProjectDescription}>
+              Description : A very basic model form has no background operation only UI.
+            </p>
+            <div className={classes.demo}>
+              <a
+                className={classes.gitsource}
+                href="https://github.com/Shelif26/React_black_form.git"
+              >
+                <i class="fa-brands fa-github"></i>
+                Source Code
+              </a>
+              <a
+                className={classes.havealook}
+                href="https://react-black-form-ip8i.vercel.app/"
+              >
+                <i class="fa-solid fa-rocket"></i>
+                Have a look
+              </a>
+            </div>
+          </div>
+        </div>
       </div>
     </>
   );

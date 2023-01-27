@@ -6,6 +6,7 @@ import Education from "./Content/Education";
 
 const Header = () => {
   return (
+  
     <>
       <link
         rel="stylesheet"
@@ -14,6 +15,7 @@ const Header = () => {
         crossorigin="anonymous"
         referrerpolicy="no-referrer"
       />
+   
       <div className={classes.Headcontainer}>
         <div className={classes.child1}>
           <h1>Hello I'm Shelif</h1>
@@ -23,14 +25,15 @@ const Header = () => {
 
         <img
           className={classes.imagepic}
-          src="https://img.freepik.com/premium-vector/user-icon_126283-435.jpg?w=2000"
+          src={require("./Content/ImagesCombo/My project.png")}
         />
       </div>
 
       <TechnicalSkill />
       <TechHead />
       {/* <Education /> */}
-    </>
+      </>
+
   );
 };
 

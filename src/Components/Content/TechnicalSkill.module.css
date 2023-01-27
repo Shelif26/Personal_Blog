@@ -1,6 +1,9 @@
 .TechnicalSkillContainer{ 
-
-    background-color: violet;
+    background-image: url(./ImagesCombo/headergif.gif);
+    background-color: white;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
     display: flex;
     padding: 2%;
     flex-direction:row;
@@ -22,16 +25,16 @@
    
 }
 .gitsource{
-  color: rgb(116, 33, 194);
+  color:rgb(0, 170, 255);
 }
 .havealook{
-  color: rgb(116, 33, 194);
+  color: rgb(0, 170, 255);
 }
 
 
 .Project{
     
-    background-color:rgb(236, 224, 224);
+    background-color:rgba(236, 224, 224, 0.529);
     animation: project 1.5s ease-out forwards;
     color: rgb(149, 0, 92);
     padding: 2%;
@@ -48,8 +51,13 @@
 
 }
 
+h4{
+  color: rgb(62, 154, 200);
+}
+
 .domain{
     font-size: larger;
+    color: rgb(62, 154, 200);
 }
 .lineBreaker{
     margin: 2%;
@@ -76,10 +84,16 @@
     .TechnicalSkillContainer{
       display: flex;
       flex-direction: column;
-     
+      background-image: url("./ImagesCombo/bodygif\ \(1\).gif");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
     }
     .Project{
         width: 95%;
+        justify-content: center;
+        background-color: rgba(255, 255, 255, 0.119);
+        color: white;
     }
    
 }
