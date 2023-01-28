@@ -33,13 +33,13 @@
 
 
 .Project{
-    
+    border: 2px solid white;
     background-color:rgba(236, 224, 224, 0.529);
     animation: project 1.5s ease-out forwards;
     color: rgb(149, 0, 92);
     padding: 2%;
     width: 80%;
-    margin: 2px;
+    margin: 2%;
     border-radius: 8px;
 }
 .heading{
