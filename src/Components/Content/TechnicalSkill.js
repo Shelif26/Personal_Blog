@@ -5,6 +5,7 @@ const TechnicalSkill = () => {
     // <---------------------------------------For Python--------------------------------------->
     <>
       <div className={classes.TechnicalSkillContainer}>
+        <div className={classes.skilldiv}>
         <div className={classes.Project}>
           <h4 className={classes.domain}>
             Programming Language : JavaScript <i class="fa-brands fa-js"></i>
@@ -74,8 +75,9 @@ const TechnicalSkill = () => {
             </div>
           </div>
         </div>
+        </div>
         {/* ------------------------------------------ */}
-       
+       <div className={classes.skilldiv}>
         <div className={classes.Project}>
           <h4 className={classes.domain}>
             Programming Language : JavaScript <i class="fa-brands fa-js"></i>
@@ -108,6 +110,7 @@ const TechnicalSkill = () => {
               </a>
             </div>
           </div>
+        </div>
         </div>
       </div>
     </>

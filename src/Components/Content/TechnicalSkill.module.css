@@ -1,6 +1,6 @@
 .TechnicalSkillContainer{ 
     background-image: url(./ImagesCombo/headergif.gif);
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.119);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -33,13 +33,13 @@
 
 
 .Project{
-    border: 2px solid white;
+    border: 2px solid rgba(255, 255, 255, 0.364);
     background-color:rgba(236, 224, 224, 0.529);
     animation: project 1.5s ease-out forwards;
     color: rgb(149, 0, 92);
     padding: 2%;
     width: 80%;
-    margin: 2%;
+    margin: 1%;
     border-radius: 8px;
 }
 .heading{
@@ -48,7 +48,6 @@
     width: 100%;
     display: flex;
     margin-left: 16%;
-
 }
 
 h4{
@@ -91,6 +90,7 @@ h4{
     }
     .Project{
         width: 95%;
+        margin: 2%;
         justify-content: center;
         background-color: rgba(255, 255, 255, 0.119);
         color: white;
