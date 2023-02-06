@@ -93,7 +93,7 @@ hr{
   color: white;
 }
 .techhr{
-  margin-top: 10%;
+  margin-top: 5rem;
   border: 0.5px solid rgba(255, 255, 255, 0.57);
   width: 80%;
   animation: hr 0.5s ease-out forwards;
@@ -106,6 +106,17 @@ button{
   background-color: rgba(0, 170, 255, 0.532);
   color:white ;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.307), 0 6px 20px 0 rgba(0, 0, 0, 0.345);
+}
+.about{
+  border-radius: 0.5rem;
+  margin-top: 5rem;
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  color: white;
+  justify-content: center;
+  border: 2px solid rgba(255, 255, 255, 0.555);
+  background-color:rgba(255, 255, 255, 0.086);
 }
 
 @keyframes disdiv1  {
@@ -208,6 +219,12 @@ button{
     .techdes1{
       font-size: 20px;
       color: white;
+    }
+    .about{
+      margin-top: 10%;
+    }
+    .techhr{
+      margin-top: 10%;
     }
     
   }

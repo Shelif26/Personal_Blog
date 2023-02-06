@@ -48,14 +48,20 @@ const Header = () => {
               <p className={classes.techdes1}>React simple Form</p>
             </span>
             <span className={classes.disdiv2}>
-              <p className={classes.techdes}>These are all the web applications created by using JavaScript</p>
+              <p className={classes.techdes}>
+                These are all the web applications created by using JavaScript
+              </p>
               <button onClick={startEditingHandler}>Expand</button>
             </span>
           </div>
         )}
         {isEditing && <TechnicalSkill onCancel={stopEditingHandler} />}
+        <div className={classes.about}>
+          <p>more about me</p>
+        </div>
       </div>
-      <hr className={classes.techhr}/>
+
+      <hr className={classes.techhr} />
       <TechHead />
     </>
   );
