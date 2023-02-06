@@ -2,11 +2,19 @@ import classes from "./Header.module.css";
 import Description from "./UI/Description";
 import TechHead from "./Content/TechHead";
 import TechnicalSkill from "./Content/TechnicalSkill";
-import Education from "./Content/Education";
+import React, { useState } from "react";
 
 const Header = () => {
+  const [isEditing, setIsEditing] = useState(false);
+  const startEditingHandler = () => {
+    setIsEditing(true);
+  };
+
+  const stopEditingHandler = () => {
+    setIsEditing(false);
+  };
+
   return (
-  
     <>
       <link
         rel="stylesheet"
@@ -15,7 +23,7 @@ const Header = () => {
         crossorigin="anonymous"
         referrerpolicy="no-referrer"
       />
-   
+
       <div className={classes.Headcontainer}>
         <div className={classes.child1}>
           <h1>Hello I'm Shelif</h1>
@@ -25,15 +33,31 @@ const Header = () => {
 
         <img
           className={classes.imagepic}
+          alt="header"
           src={require("./Content/ImagesCombo/My project.png")}
         />
       </div>
-
-      <TechnicalSkill />
+      <hr />
+      <div className={classes.techdiv}>
+        <h3 className={classes.techdivH4}>My Applications</h3>
+        {!isEditing && (
+          <div className={classes.disdiv}>
+            <span className={classes.disdiv1}>
+              <p className={classes.techdes1}>The Expense Calculator</p>
+              <p className={classes.techdes1}>The Food App</p>
+              <p className={classes.techdes1}>React simple Form</p>
+            </span>
+            <span className={classes.disdiv2}>
+              <p className={classes.techdes}>These are all the web applications created by using JavaScript</p>
+              <button onClick={startEditingHandler}>Expand</button>
+            </span>
+          </div>
+        )}
+        {isEditing && <TechnicalSkill onCancel={stopEditingHandler} />}
+      </div>
+      <hr className={classes.techhr}/>
       <TechHead />
-      {/* <Education /> */}
-      </>
-
+    </>
   );
 };
 

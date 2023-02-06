@@ -1,6 +1,6 @@
 .TechnicalSkillContainer{ 
-    background-image: url(./ImagesCombo/headergif.gif);
-    background-color: rgba(255, 255, 255, 0.119);
+    /* background-image: url(./ImagesCombo/headergif.gif); */
+    background-color: rgb(0, 0, 0);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -10,6 +10,10 @@
     justify-content: center;
     align-items: center;
     font-size: 1.5rem;
+}
+.skilldiv{
+  display: flex;
+  flex-direction: row;
 }
 .projectimg{
     width: 90%;
@@ -33,13 +37,13 @@
 
 
 .Project{
-    border: 2px solid rgba(255, 255, 255, 0.364);
-    background-color:rgba(236, 224, 224, 0.529);
+    border: 2px solid rgba(255, 255, 255, 0.555);
+    background-color:rgba(255, 255, 255, 0.086);
     animation: project 1.5s ease-out forwards;
-    color: rgb(149, 0, 92);
+    color: white;
     padding: 2%;
     width: 80%;
-    margin: 1%;
+    margin: 2%;
     border-radius: 8px;
 }
 .heading{
@@ -48,6 +52,7 @@
     width: 100%;
     display: flex;
     margin-left: 16%;
+
 }
 
 h4{
@@ -83,17 +88,11 @@ h4{
     .TechnicalSkillContainer{
       display: flex;
       flex-direction: column;
-      background-image: url("./ImagesCombo/bodygif\ \(1\).gif");
-      background-size: cover;
-      background-position: center;
-      background-repeat: no-repeat;
     }
     .Project{
         width: 95%;
-        margin: 2%;
         justify-content: center;
         background-color: rgba(255, 255, 255, 0.119);
         color: white;
     }
-   
 }
