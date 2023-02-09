@@ -114,7 +114,7 @@ const TechnicalSkill = (props) => {
             </div>
         </div>
       </div>
-      <button type="button" onClick={props.onCancel}>
+      <button className={classes.exco} type="button" onClick={props.onCancel}>
         Collapse
       </button>
     </>

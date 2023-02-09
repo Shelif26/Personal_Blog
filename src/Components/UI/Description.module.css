@@ -1,47 +1,31 @@
-.desdiv{
+.desdiv {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+.description {
+  width: 55%;
+  display: flex;
+  justify-content: center;
+  color: rgba(255, 255, 255, 0.63);
+  font-size: x-large;
+}
+
+@media (max-width: 600px) {
+  .desdiv {
+    padding: 5%;
     display: flex;
+    margin-top: 3%;
+    width: 100%;
     align-items: center;
+  }
+  .description {
     width: 100%;
-    height: 10rem;
-}
-.description{
-    width: 100%;
-    display: flex;
     text-align: center;
-    justify-content:flex-start ;
-    color: rgba(255, 255, 255, 0.797);
-    font-size: x-large;
-    animation: description 1s ease-out forwards;
-}
-
-@keyframes description {
-    0% {
-       opacity: 0;
-       transform: translateY(-1000px);
-    }
-    60% {
-       opacity: 1;
-       transform: translateY(30px);
-    }
-    80% {
-       transform: translateY(-10px);
-    }
-    100% {
-       transform: translateY(0);
-    }
- } 
-
-@media(
-    max-width: 600px
-){
-    .desdiv{
-        display: flex;
-        margin-top: 3%;
-        width: 90%;
-    }
-    .description{
-        color: white;
-        font-size:20px; 
-        margin: 1%;
-    }
+    color: rgba(255, 255, 255, 0.63);
+    font-size: 20px;
+    margin: 3%;
+  }
 }

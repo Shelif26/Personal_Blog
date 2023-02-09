@@ -1,8 +1,10 @@
 import classes from "./Header.module.css";
 import Description from "./UI/Description";
 import TechHead from "./Content/TechHead";
+import About from "./UI/About";
 import TechnicalSkill from "./Content/TechnicalSkill";
-import React, { useState } from "react";
+import { useState } from "react";
+import { motion } from "framer-motion";
 
 const Header = () => {
   const [isEditing, setIsEditing] = useState(false);
@@ -26,42 +28,62 @@ const Header = () => {
 
       <div className={classes.Headcontainer}>
         <div className={classes.child1}>
-          <h1>Hello I'm Shelif</h1>
-          <h4>A Developer</h4>
-          <Description />
+          <motion.h1
+            initial={{ opacity: 0, scale: 0.5 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{
+              duration: 0.8,
+              delay: 0.5,
+              ease: [0, 0.71, 0.2, 1.01],
+            }}
+          >
+            M.A.Shelif
+          </motion.h1>
         </div>
-
-        <img
-          className={classes.imagepic}
-          alt="header"
-          src={require("./Content/ImagesCombo/My project.png")}
-        />
-      </div>
-      <hr />
-      <div className={classes.techdiv}>
-        <h3 className={classes.techdivH4}>My Applications</h3>
-        {!isEditing && (
-          <div className={classes.disdiv}>
-            <span className={classes.disdiv1}>
-              <p className={classes.techdes1}>The Expense Calculator</p>
-              <p className={classes.techdes1}>The Food App</p>
-              <p className={classes.techdes1}>React simple Form</p>
-            </span>
-            <span className={classes.disdiv2}>
-              <p className={classes.techdes}>
-                These are all the web applications created by using JavaScript
-              </p>
-              <button onClick={startEditingHandler}>Expand</button>
-            </span>
+        <div className={classes.cchild}>
+          <div className={classes.Mchild}>
+            <h4>I design the Web</h4>
+            <h4>& User Interfaces</h4>
+            <Description />
+            <div>
+              <p className={classes.apps}>Apps that I'm using daily</p>
+              <div className={classes.logodiv}>
+                <img
+                  className={classes.logo}
+                  src="https://daily-now-res.cloudinary.com/image/upload/v1614088267/landing/Daily.dev_logo.png"
+                />
+                <img
+                  className={classes.logo}
+                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/640px-Instagram_icon.png"
+                />
+                <img
+                  className={classes.logo}
+                  src="https://play-lh.googleusercontent.com/Su39nteYoXMdmmWupitzo9XKZhZnstj2ObmJOR6S-wWCgSnF6USw3Weo7bcDL4RRv79G"
+                />
+              </div>
+            </div>
           </div>
-        )}
-        {isEditing && <TechnicalSkill onCancel={stopEditingHandler} />}
-        <div className={classes.about}>
-          <p>more about me</p>
+          <motion.div
+            initial={{ opacity: 0, scale: 0.5 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{
+              duration: 0.8,
+              delay: 0.5,
+              ease: [0, 0.71, 0.2, 1.01],
+            }}
+            className={classes.M2child}
+          >
+            <img
+              alt="phone"
+              className={classes.imagepic}
+              src={require("./Content/ImagesCombo/phone.png")}
+            />
+          </motion.div>
         </div>
       </div>
-
-      <hr className={classes.techhr} />
+      <About />
+      {/* <TechnicalSkill /> */}
+      {/* <hr className={classes.techhr} /> */}
       <TechHead />
     </>
   );
