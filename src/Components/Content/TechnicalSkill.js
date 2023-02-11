@@ -2,121 +2,58 @@ import classes from "./TechnicalSkill.module.css";
 
 const TechnicalSkill = (props) => {
   return (
-    // <---------------------------------------For Python--------------------------------------->
     <>
       <div className={classes.TechnicalSkillContainer}>
+        <h2 className={classes.work}>Work</h2>
+        <h1 className={classes.head}>Some of my projects</h1>
         <div className={classes.Project}>
-          <h4 className={classes.domain}>
-            Programming Language : JavaScript <i class="fa-brands fa-js"></i>
-          </h4>
-          <p>Frontend Framework : React.js</p>
-          <p>Backend Framework : Node.js</p>
           <div className={classes.ProjectChild}>
-            <h4>Project : The Expense App</h4>
-            <img
-              className={classes.projectimg}
-              alt="familyapp"
-              src={require("./ImagesCombo/familyapp.gif")}
-            />
-            <p className={classes.ProjectDescription}>
-              Description : It is an web-app which is used to record the
-              day-to-day expense with respect to year .
-            </p>
-            <div className={classes.demo}>
-              <a
-                className={classes.gitsource}
-                href="https://github.com/Shelif26/React_Family_App.git"
-              >
-                <i class="fa-brands fa-github"></i>
-                Source Code
-              </a>
-              <a
-                className={classes.havealook}
-                href="https://react-family-app.vercel.app/"
-              >
-                <i class="fa-solid fa-rocket"></i>
-                Have a look
-              </a>
-            </div>
-          </div>
-        </div>
-        {/* <---------------------------------------For JavaScript---------------------------------------> */}
-        <div className={classes.Project}>
-          <h4 className={classes.domain}>
-            Programming Language : JavaScript <i class="fa-brands fa-js"></i>
-          </h4>
-          <p>Frontend Framework : React.js</p>
-          <p>Backend Framework : Node.js</p>
-          <div className={classes.ProjectChild}>
-            <h4>Project : The Food Ordering App</h4>
-            <img
-              className={classes.projectimg}
-              alt="foodapp"
-              src={require("./ImagesCombo/foodapp.gif")}
-            />
-            <p className={classes.ProjectDescription}>
-              Description : Created a simple web app that helps to order food
+            <p className={classes.H4}>The Food Ordering App</p>
+            <p>
+              Created a simple web app that helps to order food
               can add food items and get how much it costs.
             </p>
-            <div className={classes.demo}>
-              <a
-                className={classes.gitsource}
-                href="https://github.com/Shelif26/React_Food_App.git"
-              >
-                <i class="fa-brands fa-github"></i>
-                Source Code
-              </a>
-              <a
-                className={classes.havealook}
-                href="https://react-food-app-el1a.vercel.app/"
-              >
-                <i class="fa-solid fa-rocket"></i>
-                Have a look
-              </a>
-            </div>
           </div>
+          <img
+            className={classes.projectimg}
+            alt="foodapp"
+            src={require("./ImagesCombo/familyapp.gif")}
+          />
+
+        </div>
+
+        <div className={classes.Project}>
+          <div className={classes.ProjectChild}>
+            <p className={classes.H4}>The Expense App</p>
+            <p className={classes.ProjectDescription}>
+             It is an web-app which is used to record the
+              day-to-day expense with respect to year .
+            </p>
+          </div>
+
+          <img
+            className={classes.projectimg}
+            alt="familyapp"
+            src={require("./ImagesCombo/familyapp.gif")}
+          />
         </div>
 
         {/* ------------------------------------------ */}
-          <div className={classes.Project}>
-            <h4 className={classes.domain}>
-              Programming Language : JavaScript <i class="fa-brands fa-js"></i>
-            </h4>
-            <p>Frontend Framework : React.js</p>
-            <p>Backend Framework : none</p>
-            <div className={classes.ProjectChild}>
-              <h4>Project : React Forms</h4>
-              <img
-                className={classes.projectimg}
-                alt="reactform"
-                src={require("./ImagesCombo/react-forms.gif")}
-              />
-              <p className={classes.ProjectDescription}>
-                Description : A very basic model form has no background
-                operation only UI.
-              </p>
-              <div className={classes.demo}>
-                <a
-                  className={classes.gitsource}
-                  href="https://github.com/Shelif26/React_black_form.git"
-                >
-                  <i class="fa-brands fa-github"></i>
-                  Source Code
-                </a>
-                <a
-                  className={classes.havealook}
-                  href="https://react-black-form-ip8i.vercel.app/"
-                >
-                  <i class="fa-solid fa-rocket"></i>
-                  Have a look
-                </a>
-              </div>
-            </div>
+        <div className={classes.Project}>
+          <div className={classes.ProjectChild}>
+            <p className={classes.H4}>React Forms</p>
+            <p className={classes.ProjectDescription}>
+              A very basic model form has no background operation
+              only UI.
+            </p>
+          </div>
+          <img
+            className={classes.projectimg}
+            alt="reactform"
+            src={require("./ImagesCombo/react-forms.gif")}
+          />
         </div>
       </div>
-      <button className={classes.exco} type="button" onClick={props.onCancel}>
-        Collapse
-      </button>
     </>
   );
 };

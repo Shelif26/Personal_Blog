@@ -3,19 +3,9 @@ import Description from "./UI/Description";
 import TechHead from "./Content/TechHead";
 import About from "./UI/About";
 import TechnicalSkill from "./Content/TechnicalSkill";
-import { useState } from "react";
 import { motion } from "framer-motion";
 
 const Header = () => {
-  const [isEditing, setIsEditing] = useState(false);
-  const startEditingHandler = () => {
-    setIsEditing(true);
-  };
-
-  const stopEditingHandler = () => {
-    setIsEditing(false);
-  };
-
   return (
     <>
       <link
@@ -27,20 +17,20 @@ const Header = () => {
       />
 
       <div className={classes.Headcontainer}>
-        <div className={classes.child1}>
-          <motion.h1
-            initial={{ opacity: 0, scale: 0.5 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{
-              duration: 0.8,
-              delay: 0.5,
-              ease: [0, 0.71, 0.2, 1.01],
-            }}
-          >
-            M.A.Shelif
-          </motion.h1>
-        </div>
         <div className={classes.cchild}>
+          <div className={classes.child1}>
+            <motion.h1
+              initial={{ opacity: 0, scale: 0.5 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{
+                duration: 0.8,
+                delay: 0.5,
+                ease: [0, 0.71, 0.2, 1.01],
+              }}
+            >
+              Shelif
+            </motion.h1>
+          </div>
           <div className={classes.Mchild}>
             <h4>I design the Web</h4>
             <h4>& User Interfaces</h4>
@@ -63,7 +53,9 @@ const Header = () => {
               </div>
             </div>
           </div>
-          <motion.div
+        </div>
+        <div className={classes.M2child}>
+          <motion.img
             initial={{ opacity: 0, scale: 0.5 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{
@@ -71,18 +63,14 @@ const Header = () => {
               delay: 0.5,
               ease: [0, 0.71, 0.2, 1.01],
             }}
-            className={classes.M2child}
-          >
-            <img
-              alt="phone"
-              className={classes.imagepic}
-              src={require("./Content/ImagesCombo/phone.png")}
-            />
-          </motion.div>
+            alt="phone"
+            className={classes.imagepic}
+            src={require("./Content/ImagesCombo/phone.png")}
+          />
         </div>
       </div>
       <About />
-      {/* <TechnicalSkill /> */}
+      <TechnicalSkill />
       {/* <hr className={classes.techhr} /> */}
       <TechHead />
     </>

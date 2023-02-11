@@ -4,11 +4,11 @@ import React from "react";
 function About() {
   return (
     <div className={classes.mdiv}>
-      <div className={classes.heading}>
-        <h1 className={classes.hh4}>About</h1>
-        <h1 className={classes.hh1}>A few Words about me</h1>
-      </div>
       <div className={classes.aboutdiv}>
+        <div className={classes.heading}>
+          <h1 className={classes.hh4}>About</h1>
+          <h1 className={classes.hh1}>A few Words about me</h1>
+        </div>
         <div className={classes.aboutme}>
           <p className={classes.para}>
             In football now as a megalopolis and at the bow. He is said to have
@@ -28,12 +28,12 @@ function About() {
             have time to use the internet.
           </p>
         </div>
-        <div className={classes.imgdiv}>
-          <img
-            className={classes.image}
-            src={require("../Content/ImagesCombo/portraitshelif.jpg")}
-          />
-        </div>
+      </div>
+      <div className={classes.imgdiv}>
+        <img
+          className={classes.image}
+          src={require("../Content/ImagesCombo/portraitshelif.jpg")}
+        />
       </div>
     </div>
   );
