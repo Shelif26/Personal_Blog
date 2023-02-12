@@ -11,11 +11,11 @@ const TechHead = () => {
           src={require("./ImagesCombo/Javascript_Logo.png")}
         />
 
-        <img
+        {/* <img
           className={classes.techimg}
           alt="typescript"
           src={require("./ImagesCombo/Typescript_logo_2020.svg.png")}
-        />
+        /> */}
 
         <img
           className={classes.techimg}

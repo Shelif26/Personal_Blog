@@ -11,17 +11,16 @@ function About() {
         </div>
         <div className={classes.aboutme}>
           <p className={classes.para}>
-            In football now as a megalopolis and at the bow. He is said to have
-            lived in this street. Donec in tortor et quam feugiat vulputate. The
-            family needed a lake for the kids, a tortor to drink, and the
-            hendrerit was.
+            Hello World! I'm Shelif, a Web Developer based out of Toronto. From
+            choreography on a stage to lines code on a web page, I love
+            combining the worlds of logic and creative design to make
+            eye-catching, accessible, and user- friendly websites and
+            applications.
           </p>
           <p className={classes.para}>
-            Curabitur feugiat finbus consequence. Now he flatters the corporal
-            layer. Morbids receive an urn of funding, nor a letter of mourning.
-            For the red hot pot, it needs to be flattered by the pain of the
-            members of Ultricia. No mauris ligula, venenatis as ultricies but,
-            the free course of the employee.
+            Technology leads, society follows. The move towards increasing
+            inclusivity and diversity in the industry through representation is
+            of importance to me.
           </p>
           <p className={classes.para}>
             Even sometimes the price of life in the country. Some people don't
@@ -32,6 +31,7 @@ function About() {
       <div className={classes.imgdiv}>
         <img
           className={classes.image}
+          alt="img"
           src={require("../Content/ImagesCombo/portraitshelif.jpg")}
         />
       </div>

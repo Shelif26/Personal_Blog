@@ -3,9 +3,10 @@ import Description from "./UI/Description";
 import TechHead from "./Content/TechHead";
 import About from "./UI/About";
 import TechnicalSkill from "./Content/TechnicalSkill";
-import { motion } from "framer-motion";
+import { motion, useScroll } from "framer-motion";
 
 const Header = () => {
+
   return (
     <>
       <link

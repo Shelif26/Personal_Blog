@@ -2,7 +2,7 @@
   width: 100%;
   display: flex;
   flex-direction: column;
-  background-color: white;
+  /* background-color: white; */
 }
 .mdiv {
   background-color: white;
@@ -23,6 +23,8 @@
 }
 .imgdiv {
   width: 65%;
+  background-repeat: no-repeat;
+  
 }
 .aboutme {
   width: 65%;
