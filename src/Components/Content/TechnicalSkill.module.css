@@ -28,17 +28,21 @@
 .projectimg {
   width: 100%;
 }
-p{
-  color:rgba(0, 0, 0, 0.575);
+.projectimg2 {
+  width: 30%;
+  margin-left: -15%;
+  position: absolute;
+}
+p {
+  color: rgba(0, 0, 0, 0.575);
   font-size: 1.5rem;
 }
-.H4{
+.H4 {
   color: rgb(0, 170, 255);
   font-weight: bold;
   font-size: 1.5rem;
-
 }
-.ProjectChild{
+.ProjectChild {
   width: 50%;
   margin: 5% 0 0 0;
 }
@@ -48,9 +52,9 @@ p{
   background-color: white;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   display: flex;
-  flex-direction: column-reverse;
+  flex-direction: column;
   padding: 2%;
-  width: 80%;
+  width: 65%;
   margin: 2%;
 }
 .heading {
@@ -60,8 +64,42 @@ p{
   display: flex;
   margin-left: 16%;
 }
+.formbutton {
+  margin-top: 2%;
+  width: 80%;
+  padding: 0.5rem;
+  border: none;
+  transition: all 0.5s;
+  border-radius: 5px;
+  background-color:rgb(0, 170, 255);
+  align-self: center;
 
-
+}
+.formbutton span{
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+.formbutton span:after{
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+.formbutton:hover span{
+  padding-right: 25px;
+}
+.formbutton:hover span:after{
+  opacity: 1;
+  right: 0;
+}
+.divbtn{
+  display:flex ;
+  flex-direction: row;
+}
 
 @keyframes project {
   from {
@@ -89,13 +127,14 @@ p{
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     color: white;
   }
-  .Project p,H4{
+  .Project p,
+  H4 {
     font-size: 1.3rem;
   }
-  .ProjectDescription{
+  .ProjectDescription {
     padding: 1%;
   }
-  .ProjectChild{
+  .ProjectChild {
     width: 100%;
     padding: 0;
     text-align: center;
@@ -106,7 +145,10 @@ p{
   .work {
     font-size: 100%;
   }
-  .projectimg{
+  .projectimg {
     padding: 3%;
+  }
+  .formbutton{
+    margin-bottom:2%;
   }
 }
