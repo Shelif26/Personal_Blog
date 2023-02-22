@@ -6,6 +6,7 @@ const TechnicalSkill = () => {
   const [isEditing, setIsEditing] = useState(false);
   const [isEditing2, setIsEditing2] = useState(false);
   const [isEditing3, setIsEditing3] = useState(false);
+  const [loading, setLoading] = useState(false);
 
   const startEditingHandler = () => {
     setIsEditing(true);
@@ -30,6 +31,10 @@ const TechnicalSkill = () => {
   const stopEditingHandler3 = () => {
     setIsEditing3(false);
   };
+  const handleClick = () => {
+    setLoading(true);
+  };
+
   return (
     <>
       <div className={classes.TechnicalSkillContainer}>
@@ -45,13 +50,10 @@ const TechnicalSkill = () => {
           {!isEditing && (
             <>
               <motion.div
-                initial={{ opacity: 0, scale: 0.5 }}
-                animate={{ opacity: 1, scale: 1 }}
-                transition={{
-                  duration: 0.2,
-                  delay: 0.3,
-                  ease: [0, 0.71, 0.2, 1.01],
-                }}
+                initial={{ opacity: 0, rotateY: -180 }}
+                animate={{ opacity: 1, rotateY: 0 }}
+                exit={{ opacity: 0, rotateY: 180 }}
+                transition={{ duration: 0.5 }}
               >
                 <div className={classes.ProjectChild}>
                   <p className={classes.H4}>The Food Ordering App</p>
@@ -71,26 +73,64 @@ const TechnicalSkill = () => {
           )}
           {isEditing && (
             <>
-              <motion.div
-                initial={{ opacity: 0, scale: 0.5 }}
-                animate={{ opacity: 1, scale: 1 }}
-                transition={{
-                  duration: 0.2,
-                  delay: 0.3,
-                  ease: [0, 0.71, 0.2, 1.01],
-                }}
-              >
-                <div>
-                  <p className={classes.H4}>The Food Ordering App</p>
-                  <p className={classes.ProjectDescription}></p>
-                </div>
-              </motion.div>
+              <hr />
               <button
                 onClick={stopEditingHandler}
                 className={classes.formbutton}
               >
                 <span>Collapse</span>
               </button>
+              <motion.div
+                initial={{ opacity: 0, rotateY: -180 }}
+                animate={{ opacity: 1, rotateY: 0 }}
+                exit={{ opacity: 0, rotateY: 180 }}
+                transition={{ duration: 0.5 }}
+              >
+                <div>
+                  <p className={classes.H4}>The Food Ordering App</p>
+                  <p className={classes.ProjectDescription}>
+                    something something something something something something
+                    something something something something something something
+                    something something something something something something
+                    something something something something something something
+                    something something something something something something
+                    something something something something something something
+                  </p>
+                  <img
+                    className={classes.eximg1}
+                    src={require("../Content/ImagesCombo/food1.png")}
+                  />
+                  <img
+                    className={classes.eximg4}
+                    src={require("../Content/ImagesCombo/food2.png")}
+                  />
+                  <p className={classes.ProjectDescription}>
+                    something something something something something something
+                    something something something something something something
+                    something something something something something something
+                  </p>
+                  <img
+                    className={classes.eximg1}
+                    src={require("../Content/ImagesCombo/food4.png")}
+                  />
+                  <img
+                    className={classes.eximg4}
+                    src={require("../Content/ImagesCombo/food3.png")}
+                  />
+                  <div>
+                    <button onClick={handleClick}>
+                      <a href="https://the-food-order-app.vercel.app/">
+                        Have a Look
+                      </a>
+                    </button>
+                    {loading && (
+                      <div className="loading-popup">
+                        <p>Loading...</p>
+                      </div>
+                    )}
+                  </div>
+                </div>
+              </motion.div>
             </>
           )}
         </div>
@@ -104,13 +144,10 @@ const TechnicalSkill = () => {
           {!isEditing2 && (
             <>
               <motion.div
-                initial={{ opacity: 0, scale: 0.5 }}
-                animate={{ opacity: 1, scale: 1 }}
-                transition={{
-                  duration: 0.2,
-                  delay: 0.3,
-                  ease: [0, 0.71, 0.2, 1.01],
-                }}
+                initial={{ opacity: 0, rotateY: -180 }}
+                animate={{ opacity: 1, rotateY: 0 }}
+                exit={{ opacity: 0, rotateY: 180 }}
+                transition={{ duration: 0.5 }}
               >
                 <div className={classes.ProjectChild}>
                   <p className={classes.H4}>The Food Ordering App</p>
@@ -130,26 +167,31 @@ const TechnicalSkill = () => {
           )}
           {isEditing2 && (
             <>
-              <motion.div
-                initial={{ opacity: 0, scale: 0.5 }}
-                animate={{ opacity: 1, scale: 1 }}
-                transition={{
-                  duration: 0.2,
-                  delay: 0.3,
-                  ease: [0, 0.71, 0.2, 1.01],
-                }}
-              >
-                <div>
-                  <p className={classes.H4}>The Expense App</p>
-                  <p className={classes.ProjectDescription}></p>
-                </div>
-              </motion.div>
               <button
                 onClick={stopEditingHandler2}
                 className={classes.formbutton}
               >
                 <span>Collapse</span>
               </button>
+              <motion.div
+                initial={{ opacity: 0, rotateY: -180 }}
+                animate={{ opacity: 1, rotateY: 0 }}
+                exit={{ opacity: 0, rotateY: 180 }}
+                transition={{ duration: 0.5 }}
+              >
+                <div>
+                  <p className={classes.H4}>The Expense App</p>
+                  <p className={classes.ProjectDescription}></p>
+                  <img
+                    className={classes.eximg1}
+                    src={require("../Content/ImagesCombo/expense3.png")}
+                  />
+                  <img
+                    className={classes.eximg4}
+                    src={require("../Content/ImagesCombo/expense1.png")}
+                  />
+                </div>
+              </motion.div>
             </>
           )}
         </div>
@@ -164,13 +206,10 @@ const TechnicalSkill = () => {
           {!isEditing3 && (
             <>
               <motion.div
-                initial={{ opacity: 0, scale: 0.5 }}
-                animate={{ opacity: 1, scale: 1 }}
-                transition={{
-                  duration: 0.2,
-                  delay: 0.3,
-                  ease: [0, 0.71, 0.2, 1.01],
-                }}
+                initial={{ opacity: 0, rotateY: -180 }}
+                animate={{ opacity: 1, rotateY: 0 }}
+                exit={{ opacity: 0, rotateY: 180 }}
+                transition={{ duration: 0.5 }}
               >
                 <div className={classes.ProjectChild}>
                   <p className={classes.H4}>The React Black Form</p>
@@ -189,26 +228,23 @@ const TechnicalSkill = () => {
           )}
           {isEditing3 && (
             <>
-              <motion.div
-                initial={{ opacity: 0, scale: 0.5 }}
-                animate={{ opacity: 1, scale: 1 }}
-                transition={{
-                  duration: 0.2,
-                  delay: 0.3,
-                  ease: [0, 0.71, 0.2, 1.01],
-                }}
-              >
-                <div>
-                  <p className={classes.H4}>The Food Ordering App</p>
-                  <p className={classes.ProjectDescription}></p>
-                </div>
-              </motion.div>
               <button
                 onClick={stopEditingHandler3}
                 className={classes.formbutton}
               >
                 <span>Collapse</span>
               </button>
+              <motion.div
+                initial={{ opacity: 0, rotateY: -180 }}
+                animate={{ opacity: 1, rotateY: 0 }}
+                exit={{ opacity: 0, rotateY: 180 }}
+                transition={{ duration: 0.5 }}
+              >
+                <div>
+                  <p className={classes.H4}>The Food Ordering App</p>
+                  <p className={classes.ProjectDescription}></p>
+                </div>
+              </motion.div>
             </>
           )}
         </div>

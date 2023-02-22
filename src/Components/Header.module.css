@@ -49,11 +49,6 @@ body {
   flex-direction: column;
 }
 
-hr {
-  border: 0.5px solid rgba(255, 255, 255, 0.57);
-  width: 80%;
-  animation: hr 0.5s ease-out forwards;
-}
 
 .child1 h1 {
   margin-left: 15%;
