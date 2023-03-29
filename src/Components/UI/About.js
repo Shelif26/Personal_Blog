@@ -11,7 +11,7 @@ function About() {
         </div>
         <div className={classes.aboutme}>
           <p className={classes.para}>
-            Hello World! I'm Shelif, a Web Developer based out of Toronto. From
+            Hello World! I'm Shelif, a Web Developer. From
             choreography on a stage to lines code on a web page, I love
             combining the worlds of logic and creative design to make
             eye-catching, accessible, and user- friendly websites and

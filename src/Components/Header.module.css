@@ -53,7 +53,7 @@ body {
 .child1 h1 {
   margin-left: 15%;
   display: flex;
-  font-size: 3rem;
+  font-size: 2rem;
   width: 100%;
   color: rgb(0, 170, 255);
 }
@@ -66,14 +66,14 @@ h1 {
 .Mchild 
 h4 {
   margin: 0 0 0;
-  font-size: 4.5rem;
+  font-size: 3.5rem;
   color: white;
   display: flex;
   justify-content: center;
 }
 
 .apps {
-  font-size: medium;
+  font-size: 1rem;
   text-align: center;
   color: white;
 }

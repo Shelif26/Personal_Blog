@@ -7,15 +7,33 @@ const TechHead = () => {
       <div className={classes.techContainerChild}>
         <img
           className={classes.techimg}
-          alt="javacript"
-          src={require("./ImagesCombo/Javascript_Logo.png")}
-        />
-
-        {/* <img
-          className={classes.techimg}
           alt="typescript"
           src={require("./ImagesCombo/Typescript_logo_2020.svg.png")}
-        /> */}
+        />
+
+        <img
+          className={classes.techimg}
+          alt="nodejs"
+          src={require("./ImagesCombo/2560px-Node.js_logo.svg.png")}
+        />
+
+        <img
+          className={classes.techimg}
+          alt="python"
+          src={require("./ImagesCombo/nest.png")}
+        />
+
+        <img
+          className={classes.techimg}
+          alt="reactjs"
+          src={require("./ImagesCombo/React-icon.svg.png")}
+        />
+
+        <img
+          className={classes.techimg}
+          alt="vue"
+          src={require("./ImagesCombo/vue.png")}
+        />
 
         <img
           className={classes.techimg}
@@ -37,14 +55,20 @@ const TechHead = () => {
 
         <img
           className={classes.techimg}
-          alt="nodejs"
-          src={require("./ImagesCombo/2560px-Node.js_logo.svg.png")}
+          alt="docker"
+          src={require("./ImagesCombo/docker.webp")}
         />
 
         <img
           className={classes.techimg}
-          alt="reactjs"
-          src={require("./ImagesCombo/React-icon.svg.png")}
+          alt="graphql"
+          src={require("./ImagesCombo/graphql.png")}
+        />
+
+        <img
+          className={classes.techimg}
+          alt="aws"
+          src={require("./ImagesCombo/aws.png")}
         />
       </div>
     </div>

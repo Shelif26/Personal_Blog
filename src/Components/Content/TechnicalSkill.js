@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/alt-text */
 import classes from "./TechnicalSkill.module.css";
 import React, { useState } from "react";
 import { motion } from "framer-motion";
@@ -50,9 +51,9 @@ const TechnicalSkill = () => {
           {!isEditing && (
             <>
               <motion.div
-                initial={{ opacity: 0, rotateY: -180 }}
+                initial={{ opacity: 0, rotateY: -90 }}
                 animate={{ opacity: 1, rotateY: 0 }}
-                exit={{ opacity: 0, rotateY: 180 }}
+                exit={{ opacity: 0, rotateY: 90 }}
                 transition={{ duration: 0.5 }}
               >
                 <div className={classes.ProjectChild}>
@@ -73,28 +74,18 @@ const TechnicalSkill = () => {
           )}
           {isEditing && (
             <>
-              <hr />
-              <button
-                onClick={stopEditingHandler}
-                className={classes.formbutton}
-              >
-                <span>Collapse</span>
-              </button>
               <motion.div
-                initial={{ opacity: 0, rotateY: -180 }}
+                initial={{ opacity: 0, rotateY: -90 }}
                 animate={{ opacity: 1, rotateY: 0 }}
-                exit={{ opacity: 0, rotateY: 180 }}
+                exit={{ opacity: 0, rotateY: 90 }}
                 transition={{ duration: 0.5 }}
               >
                 <div>
                   <p className={classes.H4}>The Food Ordering App</p>
                   <p className={classes.ProjectDescription}>
-                    something something something something something something
-                    something something something something something something
-                    something something something something something something
-                    something something something something something something
-                    something something something something something something
-                    something something something something something something
+                    This is a reactive food ordering web application.This is
+                    just the frame of a basic food ordering app with some dishes
+                    preset inside.
                   </p>
                   <img
                     className={classes.eximg1}
@@ -105,9 +96,13 @@ const TechnicalSkill = () => {
                     src={require("../Content/ImagesCombo/food2.png")}
                   />
                   <p className={classes.ProjectDescription}>
-                    something something something something something something
-                    something something something something something something
-                    something something something something something something
+                    This is a sample that we can place order for which we would
+                    like to have by selecting the particular food item also can
+                    add the count.
+                  </p>
+                  <p className={classes.ProjectDescription}>
+                    While adding the count of food items the prize of the
+                    particular food item will increase eventually.
                   </p>
                   <img
                     className={classes.eximg1}
@@ -117,17 +112,18 @@ const TechnicalSkill = () => {
                     className={classes.eximg4}
                     src={require("../Content/ImagesCombo/food3.png")}
                   />
-                  <div>
-                    <button onClick={handleClick}>
+                  <div className={classes.buttonDiv}>
+                    <button className={classes.demoButton}>
                       <a href="https://the-food-order-app.vercel.app/">
                         Have a Look
                       </a>
                     </button>
-                    {loading && (
-                      <div className="loading-popup">
-                        <p>Loading...</p>
-                      </div>
-                    )}
+                    <button
+                      onClick={stopEditingHandler}
+                      className={classes.demoButton}
+                    >
+                      Collapse
+                    </button>
                   </div>
                 </div>
               </motion.div>
